@@ -3,8 +3,8 @@ import sys
 import numpy as np
 from typing import Generator
 
-from .policy_cnn import PPOCNNAgent
-from ...types import Rollout
+from safe_grid_agents.common.agents.policy_cnn import PPOCNNAgent
+from safe_grid_agents.types import Rollout
 
 from ai_safety_gridworlds.environments.tomato_crmdp import REWARD_FACTOR
 
