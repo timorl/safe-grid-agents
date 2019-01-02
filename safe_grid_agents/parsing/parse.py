@@ -1,7 +1,6 @@
 """Auto-constructs a CLI from relevant YAML config files."""
 import sys
 
-sys.path.insert(0, "ai-safety-gridworlds/")
 from ai_safety_gridworlds.environments.boat_race import BoatRaceEnvironment
 from ai_safety_gridworlds.environments.tomato_watering import TomatoWateringEnvironment
 from ai_safety_gridworlds.environments.side_effects_sokoban import (

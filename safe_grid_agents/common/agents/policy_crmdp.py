@@ -6,7 +6,6 @@ from typing import Generator
 from .policy_cnn import PPOCNNAgent
 from ...types import Rollout
 
-sys.path.insert(0, "ai-safety-gridworlds/")
 from ai_safety_gridworlds.environments.tomato_crmdp import REWARD_FACTOR
 
 
