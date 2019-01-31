@@ -76,6 +76,18 @@ runs.
 Given a log directory `<logs>`, simply run `tensorboard --logdir <logs>`
 to visualize an agent's learning.
 
+## Docker
+
+Alternatively the agent can be ran in a docker container. To do this run
+
+``` {.bash}
+docker build . -t safe_grid_agents
+docker run -p 6006:6006 safe_grid_agents <args>
+```
+
+where `<args>` are the arguments you would normally pass to the main script.
+This does not use GPUs.
+
 # Development
 
 ## Code style
