@@ -259,7 +259,7 @@ class PPOCRMDPAgent(PPOCNNAgent):
             rollout.returns.append(returns)
             successors.append(successors_r)
 
-            self.state_memory_cap = np.max(self.state_memory_cap, 20 * len(states))
+            self.state_memory_cap = max(self.state_memory_cap, 20 * len(states))
             self._purge_memory()
 
             state = env.reset()
